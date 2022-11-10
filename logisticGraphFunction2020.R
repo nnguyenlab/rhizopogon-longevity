@@ -93,7 +93,7 @@ par(mfrow=c(1,1))
 #-#-# Rhizopogon vulgaris
 RV$time2<-RV$time^2
 rv.dd.model<-with(RV,lm(P50~time+time2)); summary(rv.dd.model)
-plot(RV$time,RV$P50,pch=21,col="#d95f02",bg="#d95f02",cex=2, xlab="Years buried", ylab=expression(log[10]~spores~required~to~colonize~"50%"~seedlings~(C[50])), ylim=c(-0.5,3),xlim=c(0,20))
+plot(RV$time,RV$P50,pch=21,col="#d95f02",bg="#d95f02",cex=2, xlab="Years buried", ylab=expression(log[10]~spores~required~to~colonize~"50%"~seedlings~(C[50])), ylim=c(-0.5,3),xlim=c(0,15))
 #xlab=expression(log[10]~spores~per~ml)
 #lines(RV$time,RV$P50,col="red",lty="dashed")
 curve((2.386023-0.990677)-0.274695*x+0.016789*x^2,0,100, col="#d95f02",lty="dashed",add=TRUE,lwd=2)
